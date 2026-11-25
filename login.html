@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Log in - Styles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+    <header>
+        <div class="header-left">
+            <a class="mobile-logo" href="index.html">styles<span>.</span></a>
+            <nav class="account-links" aria-label="Account">
+                <a class="active" href="login.html" aria-current="page">Log in</a>
+                <a href="signup.html">Sign up</a>
+            </nav>
+            <p>Pre-loved, re-loved</p>
+        </div>
+    </header>
+    <aside>
+        <a class="logo" href="index.html">styles<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="collections.html">Collections</a>
+            <a href="sell.html">Sell</a>
+            <a href="about.html">Our story</a>
+        </nav>
+    </aside>
+    <main>
+        <section class="auth-layout">
+            <p class="auth-eyebrow">WELCOME BACK</p>
+            <h1>Log in<span class="accent-dot">.</span></h1>
+            <p class="auth-note">This demo has no account service. Your details will not be sent or saved.</p>
+            <form class="auth-form" id="auth-form">
+                <label>Email
+                    <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                </label>
+                <label>Password
+                    <span class="password-field">
+                        <input id="login-password" type="password" name="password" autocomplete="current-password" minlength="8" required>
+                        <button class="password-toggle" type="button" aria-controls="login-password" aria-pressed="false">Show</button>
+                    </span>
+                </label>
+                <button class="button" type="submit">Log in</button>
+                <p class="auth-result" role="status" hidden>Demo only: sign-in is not connected and no details were sent.</p>
+            </form>
+            <p class="auth-switch">New to Styles? <a href="signup.html">Create an account</a></p>
+        </section>
+        <footer class="site-footer">
+            <span>STYLES® — SECOND LIFE, FIRST CHOICE.</span>
+            <span>TAKE GOOD CARE OF GOOD THINGS.</span>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

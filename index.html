@@ -4,12 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#ffffff">
+    <title>Styles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-
+    <header>
+        <div class="header-left">
+            <a class="mobile-logo" href="index.html">styles<span>.</span></a>
+            <nav class="account-links" aria-label="Account">
+                <a href="login.html">Log in</a>
+                <a href="signup.html">Sign up</a>
+            </nav>
+        </div>
+    </header>
+    <aside>
+        <a class="logo" href="index.html">styles<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="collections.html">Collections</a>
+            <a href="sell.html">Sell</a>
+            <a href="about.html">Our story</a>
+        </nav>
+    </aside>
+    <main>
+        <section id="home" class="page">
+            <div class="hero">
+                <div class="hero-copy">
+                    <p>GOOD CLOTHES. NEW STORIES.</p>
+                    <h1>Second life<span class="accent-dot">.</span><br><span>First choice<span
+                                class="accent-dot">.</span></span></h1>
+                    <p>Fresh pre-loved streetwear with a lot more life left in it.</p>
+                    <div class="actions">
+                        <a class="button" href="#featured">Explore</a>
+                        <a href="signup.html">Join Styles</a>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1200&q=85"
+                    alt="Streetwear hoodie">
+            </div>
+            <h2 id="featured">Fresh to the floor</h2>
+            <div class="products">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1543077557-215ad9ba6923?auto=format&fit=crop&w=700&q=80"
+                        alt="Blue denim jacket">
+                    <h3>Washed denim jacket</h3>
+                    <p>Size M · Very good · $56</p>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                        alt="White T-shirt">
+                    <h3>Heavyweight blank tee</h3>
+                    <p>Size L · Like new · $28</p>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=700&q=80"
+                        alt="Utility trousers">
+                    <h3>Utility trousers</h3>
+                    <p>Size 32 · Great shape · $42</p>
+                </article>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <span>STYLES® — SECOND LIFE, FIRST CHOICE.</span>
+            <span>TAKE GOOD CARE OF GOOD THINGS.</span>
+        </footer>
+    </main>
     <script src="script.js"></script>
 </body>
 
