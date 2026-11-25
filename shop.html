@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Shop - Styles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a class="mobile-logo" href="index.html">styles<span>.</span></a>
+            <nav class="account-links" aria-label="Account">
+                <a href="login.html">Log in</a>
+                <a href="signup.html">Sign up</a>
+            </nav>
+            <p>Pre-loved, re-loved</p>
+        </div>
+        <label>Search <input id="search" type="search" placeholder="Find a piece"></label>
+        <button id="cart" type="button" aria-label="Shopping bag, 0 items">
+            <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 8h14l1 12H4L5 8Z"></path>
+                <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+            </svg>
+            <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+        </button>
+    </header>
+    <aside>
+        <a class="logo" href="index.html">styles<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="shop.html" aria-current="page">Shop</a>
+            <a href="collections.html">Collections</a>
+            <a href="sell.html">Sell</a>
+            <a href="about.html">Our story</a>
+        </nav>
+    </aside>
+    <main>
+        <section id="shop" class="page">
+            <div class="page-heading">
+                <h1>Shop<span class="accent-dot">.</span></h1>
+                <p>One-offs and old favourites. If it is here, it is the only one.</p>
+            </div>
+            <div class="shop-tools">
+                <label class="shop-search">Search pieces
+                    <input id="shop-search" type="search" placeholder="Try denim or tee">
+                </label>
+                <label class="sort-control">Sort by
+                    <select id="sort-products">
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: low to high</option>
+                        <option value="price-high">Price: high to low</option>
+                        <option value="bestseller">Best sellers</option>
+                        <option value="alphabetical">Alphabetical</option>
+                    </select>
+                </label>
+            </div>
+            <div class="filters" aria-label="Filter products">
+                <button class="selected" type="button" data-filter="all">All</button>
+                <button type="button" data-filter="tops">Tops</button>
+                <button type="button" data-filter="outerwear">Outerwear</button>
+                <button type="button" data-filter="bottoms">Bottoms</button>
+                <span id="total">6 pieces</span>
+            </div>
+            <div class="products shop-products">
+                <article class="card" data-category="outerwear" data-search="washed denim jacket blue outerwear vintage"
+                    data-price="56" data-added="2025-02-14" data-bestseller="4">
+                    <img src="https://images.unsplash.com/photo-1543077557-215ad9ba6923?auto=format&fit=crop&w=700&q=80"
+                        alt="Blue denim jacket">
+                    <h3>Washed denim jacket</h3>
+                    <p>Size M · Very good · $56</p>
+                    <button class="add" type="button" data-item="Washed denim jacket">Add to bag</button>
+                </article>
+                <article class="card" data-category="tops" data-search="heavyweight blank tee white t-shirt top"
+                    data-price="28" data-added="2025-02-22" data-bestseller="1">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                        alt="White T-shirt">
+                    <h3>Heavyweight blank tee</h3>
+                    <p>Size L · Like new · $28</p>
+                    <button class="add" type="button" data-item="Heavyweight blank tee">Add to bag</button>
+                </article>
+                <article class="card" data-category="bottoms" data-search="utility trousers cargo pants bottoms"
+                    data-price="42" data-added="2025-02-19" data-bestseller="3">
+                    <img src="https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=700&q=80"
+                        alt="Utility trousers">
+                    <h3>Utility trousers</h3>
+                    <p>Size 32 · Great shape · $42</p>
+                    <button class="add" type="button" data-item="Utility trousers">Add to bag</button>
+                </article>
+                <article class="card" data-category="outerwear" data-search="washed zip hoodie blue sweatshirt"
+                    data-price="48" data-added="2025-02-25" data-bestseller="2">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80"
+                        alt="Blue hoodie">
+                    <h3>Washed zip hoodie</h3>
+                    <p>Size S · Very good · $48</p>
+                    <button class="add" type="button" data-item="Washed zip hoodie">Add to bag</button>
+                </article>
+                <article class="card" data-category="tops" data-search="graphic print tee black t-shirt" data-price="34"
+                    data-added="2025-02-10" data-bestseller="5">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=700&q=80"
+                        alt="Graphic T-shirt">
+                    <h3>Archive graphic tee</h3>
+                    <p>Size M · Great shape · $34</p>
+                    <button class="add" type="button" data-item="Archive graphic tee">Add to bag</button>
+                </article>
+                <article class="card" data-category="bottoms" data-search="straight leg denim jeans blue"
+                    data-price="46" data-added="2025-02-17" data-bestseller="6">
+                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80"
+                        alt="Blue jeans">
+                    <h3>Straight-leg denim</h3>
+                    <p>Size 30 · Like new · $46</p>
+                    <button class="add" type="button" data-item="Straight-leg denim">Add to bag</button>
+                </article>
+            </div>
+            <p id="empty" hidden>No pieces match that search.</p>
+        </section>
+        <footer class="site-footer">
+            <span>STYLES® — SECOND LIFE, FIRST CHOICE.</span>
+            <span>TAKE GOOD CARE OF GOOD THINGS.</span>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
