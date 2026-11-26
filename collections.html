@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Collections - Styles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a class="mobile-logo" href="index.html">styles<span>.</span></a>
+            <nav class="account-links" aria-label="Account">
+                <a href="login.html">Log in</a>
+                <a href="signup.html">Sign up</a>
+            </nav>
+            <p>Pre-loved, re-loved</p>
+        </div>
+        <button id="cart" type="button" aria-label="Shopping bag, 0 items">
+            <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 8h14l1 12H4L5 8Z"></path>
+                <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+            </svg>
+            <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+        </button>
+    </header>
+    <aside>
+        <a class="logo" href="index.html">styles<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a class="active" href="collections.html" aria-current="page">Collections</a>
+            <a href="sell.html">Sell</a>
+            <a href="about.html">Our story</a>
+        </nav>
+    </aside>
+    <main>
+        <section id="collections" class="page">
+            <div class="page-heading">
+                <h1>The edits<span class="accent-dot">.</span></h1>
+                <p>Shop complete looks, bundles of similar finds, and sellers you follow.</p>
+            </div>
+
+            <nav class="collection-nav" aria-label="Collections">
+                <a href="#bundles">Curated bundles</a>
+                <a href="#followed-sellers">Followed sellers</a>
+            </nav>
+
+            <section class="collection-section" id="bundles" aria-labelledby="bundles-title">
+                <div class="collection-section-heading">
+                    <div>
+                        <p>READY-MADE ROTATIONS</p>
+                        <h2 id="bundles-title">Curated bundles</h2>
+                    </div>
+                    <p>Complete outfits and groups of similar pieces, brought together for you.</p>
+                </div>
+                <div class="bundle-grid">
+                    <article class="bundle-card">
+                        <div class="bundle-image">
+                            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=85"
+                                alt="A complete layered streetwear outfit">
+                            <span>3-PIECE OUTFIT</span>
+                        </div>
+                        <div class="bundle-content">
+                            <p class="bundle-type">THE FULL LOOK</p>
+                            <h3>Off-duty uniform</h3>
+                            <p class="bundle-description">An easy outfit, from the top layer down.</p>
+                            <ul class="bundle-items">
+                                <li>Washed denim jacket <span>$56</span></li>
+                                <li>Heavyweight blank tee <span>$28</span></li>
+                                <li>Straight-leg denim <span>$46</span></li>
+                            </ul>
+                            <div class="bundle-total"><span>3 pieces</span><strong>$130</strong></div>
+                            <a class="button" href="shop.html">Explore the outfit</a>
+                        </div>
+                    </article>
+
+                    <article class="bundle-card">
+                        <div class="bundle-image">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1100&q=85"
+                                alt="A colorful pair of sneakers">
+                            <span>3-PAIR BUNDLE</span>
+                        </div>
+                        <div class="bundle-content">
+                            <p class="bundle-type">THE SHOE ROTATION</p>
+                            <h3>Three pairs, one good rotation</h3>
+                            <p class="bundle-description">A trio of easy-to-wear sneakers for everyday plans.</p>
+                            <ul class="bundle-items">
+                                <li>Retro runner <span>$54</span></li>
+                                <li>Everyday court sneaker <span>$48</span></li>
+                                <li>Canvas low-top <span>$38</span></li>
+                            </ul>
+                            <div class="bundle-total"><span>3 pairs</span><strong>$140</strong></div>
+                            <a class="button" href="shop.html">Explore the bundle</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="collection-section followed-section" id="followed-sellers" aria-labelledby="sellers-title">
+                <div class="collection-section-heading">
+                    <div>
+                        <p>YOUR COMMUNITY</p>
+                        <h2 id="sellers-title">Followed sellers</h2>
+                    </div>
+                    <p>Recent picks from sellers you follow. These sample profiles are static until an account backend
+                        is added.</p>
+                </div>
+                <div class="seller-grid">
+                    <article class="seller-card">
+                        <div class="seller-avatar" aria-hidden="true">AM</div>
+                        <div class="seller-details">
+                            <span class="seller-status">FOLLOWING</span>
+                            <h3>Archive by Maya</h3>
+                            <p class="seller-handle">@archivebymaya</p>
+                            <p>Vintage denim, graphic tees, and lived-in layers.</p>
+                            <p class="seller-recent"><strong>Recent finds:</strong> Denim jacket · Graphic tee</p>
+                        </div>
+                    </article>
+                    <article class="seller-card">
+                        <div class="seller-avatar seller-avatar-blue" aria-hidden="true">JT</div>
+                        <div class="seller-details">
+                            <span class="seller-status">FOLLOWING</span>
+                            <h3>June's Rotation</h3>
+                            <p class="seller-handle">@junesrotation</p>
+                            <p>Everyday staples and one-off streetwear finds.</p>
+                            <p class="seller-recent"><strong>Recent finds:</strong> Blank tee · Zip hoodie</p>
+                        </div>
+                    </article>
+                    <article class="seller-card">
+                        <div class="seller-avatar seller-avatar-yellow" aria-hidden="true">RK</div>
+                        <div class="seller-details">
+                            <span class="seller-status">FOLLOWING</span>
+                            <h3>Re-Kit Studio</h3>
+                            <p class="seller-handle">@rekitstudio</p>
+                            <p>Utility wear, workwear, and useful old favorites.</p>
+                            <p class="seller-recent"><strong>Recent finds:</strong> Utility trousers · Denim</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
+        <footer class="site-footer">
+            <span>STYLES® — SECOND LIFE, FIRST CHOICE.</span>
+            <span>TAKE GOOD CARE OF GOOD THINGS.</span>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

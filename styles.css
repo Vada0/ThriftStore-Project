@@ -557,6 +557,236 @@ main > .page > h2 {
   color: var(--ink);
 }
 
+/* Collections page */
+.collection-nav {
+    display: flex;
+    gap: 22px;
+    margin: 0 0 30px;
+    border-bottom: 1px solid var(--line);
+}
+
+.collection-nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid transparent;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.collection-nav a:hover {
+    border-bottom-color: var(--ink);
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.collection-section {
+    margin-bottom: 48px;
+}
+
+.collection-section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 18px;
+}
+
+.collection-section-heading p {
+    max-width: 390px;
+    margin: 0 0 4px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.collection-section-heading div > p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.collection-section-heading h2 {
+    margin: 7px 0 0;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.bundle-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.bundle-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--paper);
+}
+
+.bundle-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    background: var(--ink);
+}
+
+.bundle-image img {
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.8);
+}
+
+.bundle-image > span {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    padding: 7px 9px;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.bundle-content {
+    padding: 17px;
+}
+
+.bundle-type {
+    margin: 0;
+    color: var(--muted);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.bundle-content h3 {
+    margin: 7px 0 5px;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+}
+
+.bundle-description {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.bundle-items {
+    display: grid;
+    gap: 7px;
+    margin: 0;
+    border-top: 1px solid var(--line);
+    padding: 12px 0;
+    list-style: none;
+}
+
+.bundle-items li,
+.bundle-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 10px;
+}
+
+.bundle-items li span {
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.bundle-total {
+    border-top: 1px solid var(--line);
+    padding: 12px 0;
+    color: var(--muted);
+}
+
+.bundle-total strong {
+    color: var(--ink);
+    font-size: 15px;
+}
+
+.bundle-content .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.followed-section {
+    border-top: 1px solid var(--line);
+    padding-top: 30px;
+}
+
+.seller-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.seller-card {
+    display: flex;
+    min-width: 0;
+    align-items: flex-start;
+    gap: 13px;
+    border: 1px solid var(--line);
+    padding: 16px;
+    background: var(--paper);
+}
+
+.seller-avatar {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.seller-details {
+    min-width: 0;
+}
+
+.seller-status {
+    color: var(--muted);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.seller-details h3 {
+    margin: 5px 0 2px;
+    font-size: 13px;
+}
+
+.seller-details p {
+    margin: 7px 0;
+    color: var(--muted);
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.seller-details .seller-handle {
+    margin: 0;
+    color: var(--ink);
+}
+
+.seller-details .seller-recent {
+    margin-top: 5px;
+    font-size: 9px;
+}
+
+.seller-recent strong {
+    color: var(--ink);
+}
+
+
 @media (max-width: 900px) {
   aside {
     position: static;
@@ -622,6 +852,19 @@ main > .page > h2 {
     flex-wrap: wrap;
     padding: 14px 0;
   }
+
+  
+    .bundle-grid,
+    .seller-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bundle-card,
+    .seller-card {
+        flex: 0 1 calc(50% - 9px);
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -676,4 +919,25 @@ main > .page > h2 {
   .products > .card img {
     height: 170px;
   }
+
+   .bundle-grid,
+    .seller-grid {
+        flex-direction: column;
+    }
+
+    .bundle-card,
+    .seller-card {
+        flex-basis: 100%;
+    }
+
+    .collection-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .collection-nav {
+        flex-wrap: wrap;
+        gap: 0 16px;
+    }
 }
